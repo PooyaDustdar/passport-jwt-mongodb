@@ -1,0 +1,35 @@
+{
+    "name": "pdustdar/passport-jwt-mongodb",
+    "description": "",
+    "type": "library",
+    "authors": [
+        {
+            "name": "pooya dustdar",
+            "email": "pdustdar@gmail.com",
+            "homepage": "https://dustdar.ir"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": ">=5.5",
+        "jenssegers/mongodb": ">=3.3",
+        "laravel/passport": ">=6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pdustdar\\MongoPass\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pdustdar\\MongoPass\\MongoPassServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
