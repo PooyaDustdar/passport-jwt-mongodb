@@ -129,7 +129,7 @@ class PersonalAccessTokenFactory
     protected function findAccessToken(array $response)
     {
         return $this->tokens->find(
-            $this->jwt->parse($response['access_token'])->claims()->get('jti')
+            $this->jwt->parse($response['access_token'])->getClaim('jti')
         );
     }
 }
